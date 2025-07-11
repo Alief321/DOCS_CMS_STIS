@@ -1,4 +1,4 @@
 ## Isi Dokumentasi
 
-1. [daftar permission](/permissions.md)
-2. [daftar block](/block.md)
+1. [Daftar permission](/permissions.md)
+2. [Daftar blok](/block.md)
