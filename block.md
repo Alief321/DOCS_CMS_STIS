@@ -17,7 +17,7 @@ Blok adalah komponen-komponen yang digunakan untuk menyusun halaman di konten ha
   - [4. Higlight Card](#4-higlight-card)
   - [5. Higlight Tab Content](#5-higlight-tab-content)
   - [6. Visi Misi](#6-visi-misi)
-  - [7. Webinar Content](#7-webinar-content)
+  - [7. Webinar Higlight](#7-webinar-higlight)
 - [Raw Components](#raw-components)
   - [1. Accordion](#1-accordion)
   - [2. Call To Action](#2-call-to-action)
@@ -85,6 +85,7 @@ Berikut adalah contoh tampilan dari komponen agenda
 ## 3. Gallery Higlight
 
 ![galerry](block/isian/gallery.png)
+
 Gambar di atas adalah isian dari blok gallery higlight.
 
 Berikut adalah penjelasan singkat dari beberapa isian yang ada di blok ini
@@ -124,15 +125,59 @@ Berikut adalah contoh tampilan dari higlight card
 
 ## 5. Higlight Tab Content
 
+![Higlight tab content](block/isian/HiglightTabContent.png)
+
 Gambar di atas adalah isian dari block higlight tab content.
 
 Berikut adalah penjelasan dari isian block Higlight tab content
+| Isian Pertanyaan | Deskripsi |
+| --------------------- | ------------------------ |
+| Tampilkan block | Apabila dicentang maka komponen ini akan tampil di halaman |
+|Nama tab| tulisan penanda tab|
+| Tipe pengambilan Higlight | Ada dua opsi dalam pengambilan data untuk higlight. `terbaru` digunakan jika ingin menampilkan otomatis data konten terbaru, `manual` jika ingin memilih sendiri higlight yang ingin ditampilkan di komponen higlight tab content. |
+|Pilih collection| Memilih jenis konten yang ingin ditampilkan apakah `galeri`, `artikel`, `berita`, `prestasi`, `ukm ukk`, atau `agenda` |
+
+Berikut adalah contoh tampilan dari komponen ini
+
+![higlight tab content](block/preview/higlightTabContent.png)
 
 ## 6. Visi Misi
 
-## 7. Webinar Content
+![VisiMisi](block/isian/visiMisi.png)
 
----
+Gambar di atas adalah isian dari komponen visi misi
+
+Berikut adalah penjelasan dari isian block Higlight tab content
+
+| Isian Pertanyaan | Deskripsi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tampilkan block  | Apabila dicentang maka komponen ini akan tampil di halaman                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Pilih Gambar     | upload atau memilih gambar untuk ditampilkan di komponen ini                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Posisi Gambar    | posisi dari gambar apakah di kiri atau kanan konten visi misi ( _berlaku untuk dekstop di mobile akan menyesuaikan sendiri_ )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| warna garis      | warna pada garis pembatas antara visi dan misi. Jenis warnanya seperti warna background                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| warna background | Warna dari latar belakang komponen. Saat ini ada 5 jenis warna yang dapat dipakai, yakni <span style="display:inline-block; width:100px;  background-color:hsl(214, 79%, 30%); color:white; text-align:center; border-radius:4px;">Primary</span> <span style="display:inline-block; width:100px;  background-color:hsl(226, 57%, 21%); color:white; text-align:center; border-radius:4px;">Secondary</span> <span style="display:inline-block; width:100px;  background-color:hsl(45, 80%, 46%); color:black; text-align:center; border-radius:4px;">Accent</span> <span style="display:inline-block; width:100px;  background-color:hsl(0, 0%, 93.8%); color:black; text-align:center; border-radius:4px;">Default</span><span style="display:inline-block; width:100px;  background-color:#FFFFFF; color:black; text-align:center; border-radius:4px; border:1px solid #ccc;">None</span> |
+
+Berikut adalah tampilan dari komponen ini
+
+![visimisi](block/preview/visimisi.png)
+
+## 7. Webinar Higlight
+
+![higlight webinar](block/isian/higlightWebinar.png)
+Gambar di atas adalah isian dari komponen Webinar Higlight
+
+Berikut adalah penjelasan dari isian block webinar higlight
+
+| Isian Pertanyaan      | Deskripsi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tampilkan block       | Apabila dicentang maka komponen ini akan tampil di halaman                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Tipe pengambilan data | Ada dua opsi dalam pengambilan data untuk webinar higlight. `terbaru` digunakan jika ingin menampilkan otomatis data webinar terbaru, `manual` jika ingin memilih sendiri webinar yang ingin ditampilkan di komponen ini.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Warna background      | Warna dari latar belakang komponen. Saat ini ada 5 jenis warna yang dapat dipakai, yakni <span style="display:inline-block; width:100px;  background-color:hsl(214, 79%, 30%); color:white; text-align:center; border-radius:4px;">Primary</span> <span style="display:inline-block; width:100px;  background-color:hsl(226, 57%, 21%); color:white; text-align:center; border-radius:4px;">Secondary</span> <span style="display:inline-block; width:100px;  background-color:hsl(45, 80%, 46%); color:black; text-align:center; border-radius:4px;">Accent</span> <span style="display:inline-block; width:100px;  background-color:hsl(0, 0%, 93.8%); color:black; text-align:center; border-radius:4px;">Default</span><span style="display:inline-block; width:100px;  background-color:#FFFFFF; color:black; text-align:center; border-radius:4px; border:1px solid #ccc;">None</span> |
+| Warna button          | warna dari tombol untuk baca selengkapnya dan agenda lainnya. Jenis warnanya sama dengan warna background                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+
+Berikut adalah tampilan dari komponen ini
+
+![webinar higlight](block/preview/webinarHiglight.png)
 
 # Raw Components
 
