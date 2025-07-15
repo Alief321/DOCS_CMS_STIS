@@ -48,6 +48,8 @@ Blok adalah komponen-komponen yang digunakan untuk menyusun halaman di konten ha
 
 # Higlight Content
 
+Group Higlight content berisi kumpulan konmponen yang mengambil data dari konten yang ada di CMS sehingga berfungsi sebagai higlight (sorotan konten)
+
 ## 1. Highlight Achievement
 
 ![higlightAchievement](block/isian/higlightAchievement.png)
@@ -183,6 +185,8 @@ Berikut adalah tampilan dari komponen ini
 ![webinar higlight](block/preview/webinarHiglight.png)
 
 # Raw Components
+
+Group raw components adalah jenis komponen di website/aplikasi yang tidak mengambil data dari konten lainnya. Sebaliknya, kontennya ditulis langsung oleh pengelola halaman
 
 ## 1. Accordion
 
@@ -328,13 +332,93 @@ Berikut adalah tampilan dari komponen ini
 
 ## 7. Slider Image
 
+Komponen ini berfungsi menampilkan kumpulan gambar yang beberapa gambar secara bergantian dalam satu tempat. Gambar-gambar ini bisa berpindah secara otomatis atau dengan cara diklik oleh pengguna. Berikut adalah isian untuk kommponen ini
+
+![sliderImages](block/isian/sliderImage.png)
+
+Berikut adalah penjelasan terkait isian komponen
+
+| Isi pertanyaan          | Deskripsi                                                                                      |
+| ----------------------- | ---------------------------------------------------------------------------------------------- |
+| Tampilkan block         | Apabila dicentang maka komponen ini akan tampil di halaman                                     |
+| Pilih media             | Pilih gambar untuk ditampilkan                                                                 |
+| Judul                   | Teks yang akan ditampilkan di atas komponen yang berfungsi sebagai judul komponen              |
+| Posisi judul            | Posisi dari judul, apakah di `tengah` `kanan` atau `kiri`                                      |
+| Pilih gambar            | Pilih gambar untuk ditampilkan                                                                 |
+| Jumlah gambar per slide | Jumlah gambar yang ditampilkan per satu slide pada ukuran dekstop (ukuran mobile menyesuaikan) |
+| Opacity mask            | Jika dicentang maka opcaitynya menurun                                                         |
+
+Berikut adalah tampilan untuk komponen ini
+
+![sliderImage](block/preview/sliderImage.png)
+
 ## 8. Tabs Content
 
+Tabs content adalah komponen di website/aplikasi yang memungkinkan pengguna berpindah antar bagian konten dengan mengklik tab (seperti klik menu). Fungsinya mirip seperti binder dengan beberapa pembatas halaman — tiap pembatas menunjukkan isi yang berbeda. Berikut isian dari komponen ini
+
+![tabsContent](block/isian/tabsContent.png)
+
+Berikut adalah penjelasan isian dari komponen ini
+
+| Isi Pertanyaan  | Deskripsi                                                     |
+| --------------- | ------------------------------------------------------------- |
+| Tampilkan Block | Apabila dicentang maka komponen ini akan tampil di halaman    |
+| Tipe tabs       | Tabsnya akan berjejer horizontal atau menurun secara vertical |
+| Nama tab        | Nama penanda tab                                              |
+| Content         | Konten yang ada di tab                                        |
+
+Berikut adalah tampilan dari komponen ini
+
+- Horizontal
+  ![tabsContent](block/preview/tabsContentHorizontal.png)
+- Vertikal
+  ![tabsContent](block/preview/tabsContent.png)
+
 ## 9. Timeline
+
+Komponen ini berguna untuk menampilkan timeline kegiatan tertentu. Berikut adalah isian dari komponen ini
+
+![timeline](block/isian/timeline.png)
+
+Berikut adalah penjelasan dari isian komponen
+
+| Isi Pertanyaan                      | Deskripsi                                                                                                                                                                                                                                                   |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tampilkan Block                     | Apabila dicentang maka komponen ini akan tampil di halaman                                                                                                                                                                                                  |
+| Judul                               | Teks yang akan ditampilkan di atas komponen yang berfungsi sebagai judul komponen                                                                                                                                                                           |
+| Posisi judul                        | Posisi dari judul, apakah di `tengah` `kanan` atau `kiri`                                                                                                                                                                                                   |
+| Nama kegiatan                       | Nama dari kegiatan                                                                                                                                                                                                                                          |
+| Tipe Timeline                       | Tipe format waktu apakah `hari` ,`hari dan waktu`, `bulan`, `waktu`, `default (hari/bulan/tahun)`                                                                                                                                                           |
+| waktu/tanggal/bulan mulai           | waktu kegiatan dimulai                                                                                                                                                                                                                                      |
+| waktu/tanggal/bulan selesai         | waktu kegiatan selesai                                                                                                                                                                                                                                      |
+| Deskripsi kegiatan                  | Deskripsi singkat dari kegiatan                                                                                                                                                                                                                             |
+| Tampilkan button CTA                | Jika dicentang akan menampilkan tombol yang melink ke halaman tertentu                                                                                                                                                                                      |
+| Label button                        | label/tulisan pada tombol                                                                                                                                                                                                                                   |
+| Tipe Redirect link                  | Jika `internal link` mengarah ke page internal dari website stis. Jika `custom url` mengarah ke url di luar web stis.ac.id misalnyaa ugm.ac.id. jika `Link dari collection page STIS` mengarah ke halaman collection web stis misal "gallery" "berita" dll. |
+| Arahkan ke halaman                  | Memilih arahkan ke halaman mana link ini                                                                                                                                                                                                                    |
+| Url Link                            | Arahkan ke link di luar halaman stis                                                                                                                                                                                                                        |
+| Pilih collection page dari web STIS | Memilih halaman daftar konten Politeknik Statistika STIS                                                                                                                                                                                                    |
+
+Berikut tampilan komponen ini
+
+![timeline](block/preview/timeline.png)
+
+terdapat tiga jenis status pada timeline. Jika sudah selesai bundaran akan bewarna biru, jika sedang berlangsung akan bewarna kuning, dan jika belum dimulai akan bewarna transparan dengan border biru
+
+berikut contoh tiap statusnya
+
+- belum dimulai
+  ![belum dimulai](block/other/status-not.png)
+- sedang berlangsung
+  ![belum dimulai](block/other/status-now.png)
+- sudah selesai
+  ![belum dimulai](block/other/status-done.png)
 
 ---
 
 # Group Card
+
+Group card adalah komponen yang digunakan untuk menampilkan kumpulan card/kartu yang datanya dapat berasal dari konten STIS maupun dapat ditulis/dicustom manual.
 
 ## 1. Bento Group Card
 
