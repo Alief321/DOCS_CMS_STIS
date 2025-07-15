@@ -24,6 +24,7 @@ Blok adalah komponen-komponen yang digunakan untuk menyusun halaman di konten ha
   - [3. Content](#3-content)
   - [4. Hero](#4-hero)
   - [5. Media](#5-media)
+    - [Mendapatkan Embed Link Video Youtube](#mendapatkan-embed-link-video-youtube)
   - [6. Photo group](#6-photo-group)
   - [7. Slider Image](#7-slider-image)
   - [8. Tabs Content](#8-tabs-content)
@@ -51,7 +52,7 @@ Blok adalah komponen-komponen yang digunakan untuk menyusun halaman di konten ha
 
 ![higlightAchievement](block/isian/higlightAchievement.png)
 
-Gambar di atas adalah isian dari blok higlight achievement.
+Gambar di atas adalah isian dari blok higlight achievement. Blok ini berfungsi menampilkan dan menyorot konten prestasi mahasiswa STIS
 
 Berikut adalah penjelasan singkat dari beberapa isian yang ada di blok ini
 
@@ -67,7 +68,8 @@ Berikut adalah contoh tampilan dari komponen higlight achievement
 ## 2. Agenda
 
 ![agenda](block/isian/agenda.png)
-Gambar di atas adalah isian dari blok agenda.
+
+Gambar di atas adalah isian dari blok agenda. Blok ini berfungsi untuk menampilkan 4 agenda terbaru dari masing-masing jenis agenda (telah lewat/akan datang)
 
 Berikut adalah penjelasan singkat dari beberapa isian yang ada di blok ini
 
@@ -86,7 +88,7 @@ Berikut adalah contoh tampilan dari komponen agenda
 
 ![galerry](block/isian/gallery.png)
 
-Gambar di atas adalah isian dari blok gallery higlight.
+Gambar di atas adalah isian dari blok gallery higlight. Blok ini berfungsi menampilkan dan memberikan sorotan pada maksimal 6 konten galeri
 
 Berikut adalah penjelasan singkat dari beberapa isian yang ada di blok ini
 
@@ -105,7 +107,8 @@ Berikut adalah contoh tampilkan dari gallery higlight
 ![higlight card](block/isian/higlightCard.png)
 ![higlight card2](block/isian/higlightCard2.png)
 
-Gambar di atas adalah isian dari blok higlight card. Gambar pertama jika memilih higlight dari data terbaru pada konten yang dipilih. Sedangkan gambar kedua dengan memilih manual data konten mana yang mau dihiglight.
+Gambar di atas adalah isian dari blok higlight card. Gambar pertama jika memilih higlight dari data terbaru pada konten yang dipilih. Sedangkan gambar kedua dengan memilih manual data konten mana yang mau dihiglight. Blok ini berfungsi untuk menampilkan dan menyoroti maksimal 3 data dalam bentuk card dari tiap jenis konten yang ada di situs web.
+
 Berikut adalah penjelasan singkat dari beberapa isian yang ada di blok ini
 
 | Isi Pertanyaan                                   | Deskripsi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -117,7 +120,7 @@ Berikut adalah penjelasan singkat dari beberapa isian yang ada di blok ini
 | Tipe pengambilan data                            | Ada dua opsi dalam pengambilan data untuk agenda. `agenda yang akan datang` digunakan jika hanya ingin menampilkan agenda yang akan datang, `agenda yang telah lewat` jika hanya ingin menampilkan agenda yang telah berlalu, `semua agenda` menampilkan agenda baik yang akan datang maupun yang telah berlalu.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Sumber data                                      | Ada dua opsi dalam pengambilan data untuk higlightAchievement. `terbaru` digunakan jika ingin menampilkan otomatis data prestasi terbaru, `manual` jika ingin memilih sendiri prestasi yang ingin ditampilkan di komponen higlight achievement.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Jenis konten yang ditampilkan / Pilih Collection | Memilih jenis konten yang ingin ditampilkan apakah `galeri`, `artikel`, `berita`, `prestasi`, `ukm ukk`, atau `agenda`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| batas jumlah data yang ditampilkan               | Membatasi jumlah data yang ditampilkan pada saat memilih sumber data `terbaru`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| batas jumlah data yang ditampilkan               | Membatasi jumlah data yang ditampilkan pada saat memilih sumber data `terbaru`. Maksimal 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Pilih `konten` yang ingin ditampilkan            | Memilih secara manual data `konten` yang ingin ditampilkan di komponen higlight card                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 Berikut adalah contoh tampilan dari higlight card
@@ -127,7 +130,7 @@ Berikut adalah contoh tampilan dari higlight card
 
 ![Higlight tab content](block/isian/HiglightTabContent.png)
 
-Gambar di atas adalah isian dari block higlight tab content.
+Gambar di atas adalah isian dari block higlight tab content. Blok ini berfungsi menampilkan dan memberikan sorotan kepada 3 jenis konten yang ada di situs web dengan mengambil masing-masing satu data untuk tiap konten yang disajikan dalam bentuk komponen tab.
 
 Berikut adalah penjelasan dari isian block Higlight tab content
 | Isi Pertanyaan | Deskripsi |
@@ -145,7 +148,7 @@ Berikut adalah contoh tampilan dari komponen ini
 
 ![VisiMisi](block/isian/visiMisi.png)
 
-Gambar di atas adalah isian dari komponen visi misi
+Gambar di atas adalah isian dari komponen visi misi. Blok ini berfungsi menampilkan visi misi.
 
 Berikut adalah penjelasan dari isian block Higlight tab content
 
@@ -164,7 +167,7 @@ Berikut adalah tampilan dari komponen ini
 ## 7. Webinar Higlight
 
 ![higlight webinar](block/isian/higlightWebinar.png)
-Gambar di atas adalah isian dari komponen Webinar Higlight
+Gambar di atas adalah isian dari komponen Webinar Higlight. Komponen ini berfungsi untuk menampilkan sorotan pada salah satu data konten agenda bertipe webinar.
 
 Berikut adalah penjelasan dari isian block webinar higlight
 
@@ -185,9 +188,9 @@ Berikut adalah tampilan dari komponen ini
 
 ![accordion](block/isian/Accordion.png)
 
-Gambar di atas adalah isian dari komponen accordion
+Gambar di atas adalah isian dari komponen accordion. Gambar ini berfungsi menampilkan komponen accordion yakni komponen di halaman web atau aplikasi yang bisa dibuka dan ditutup untuk menampilkan atau menyembunyikan isi. Mirip seperti daftar pertanyaan atau menu lipat.
 
-berikut adalah penjelasan dari tiap isian
+Berikut adalah penjelasan dari tiap isian
 
 | Isi Pertanyaan       | Deskripsi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -251,20 +254,77 @@ Berikut adalah tampilan dari komponen ini
 
 ![hero](block/isian/hero.png)
 
-Gambar di atas adalah isian untuk komponen hero
+Gambar di atas adalah isian untuk komponen hero. Hero adalah bagian di halaman depan (biasanya paling atas) yang menampilkan gambar besar yang bisa berganti-ganti secara otomatis atau manual, biasanya disertai teks dan tombol ajakan (seperti “Pelajari Lebih Lanjut” atau “Daftar Sekarang”).
 
 Berikut adalah penjelasan dari isian komponen tersebut
+
+| Isi Pertanyaan                      | Deskripsi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tampilkan block                     | Apabila dicentang maka komponen ini akan tampil di halaman                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Judul                               | Teks besar yang ada di slide hero                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Deskripsi                           | Teks kecil penjelasan lebih detail                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Tipe Redirect link                  | Jika `internal link` mengarah ke page internal dari website stis. Jika `custom url` mengarah ke url di luar web stis.ac.id misalnyaa ugm.ac.id. jika `collection page` mengarah ke halaman collection web stis misal "gallery" "berita" dll.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Arahkan ke halaman                  | Memilih arahkan ke halaman mana link ini                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Url Link                            | Arahkan ke link di luar halaman stis                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Pilih collection page dari web STIS | Memilih halaman daftar konten Politeknik Statistika STIS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tulisan dalam button                | Tulisan yang ada pada tombol link                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Tipe style button                   | Tipe tombol dengan penjelasan sebagai berikut. <ul><li> `Solid button` adalah tombol yang warnanya penuh, menutupi seluruh tombol</li> <li>untuk `outline button` warna transparan dan hanya border di sekitarnya yang bewarna </li><li>untuk `error button` adalah button dengan warna merah </li> <li>`link button` warna button transparan hanya ada underline di bawah tulisan bila cursor diarahkan ke area button</li><li> `ghost button` warnanya transparan</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Warna button                        | Warna dari tombol. Saat ini ada 5 jenis warna yang dapat dipakai, yakni <span style="display:inline-block; width:100px;  background-color:hsl(214, 79%, 30%); color:white; text-align:center; border-radius:4px;">Primary</span> <span style="display:inline-block; width:100px;  background-color:hsl(226, 57%, 21%); color:white; text-align:center; border-radius:4px;">Secondary</span> <span style="display:inline-block; width:100px;  background-color:hsl(45, 80%, 46%); color:black; text-align:center; border-radius:4px;">Accent</span> <span style="display:inline-block; width:100px;  background-color:hsl(0, 0%, 93.8%); color:black; text-align:center; border-radius:4px;">Default</span><span style="display:inline-block; width:100px;  background-color:#FFFFFF; color:black; text-align:center; border-radius:4px; border:1px solid #ccc;">None</span>                  |
+| Jenis Background                    | Jenis dari background yang digunakan komponen, apakah `gambar`, `warna` atau `3D Marquee gambar`. Untuk `3D Marquee gambar` backgroundnya berupa banyak gambar yang bergerak                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Gambar untuk background             | Gambar untuk background                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Warna untuk Background              | Warna dari latar belakang komponen. Saat ini ada 5 jenis warna yang dapat dipakai, yakni <span style="display:inline-block; width:100px;  background-color:hsl(214, 79%, 30%); color:white; text-align:center; border-radius:4px;">Primary</span> <span style="display:inline-block; width:100px;  background-color:hsl(226, 57%, 21%); color:white; text-align:center; border-radius:4px;">Secondary</span> <span style="display:inline-block; width:100px;  background-color:hsl(45, 80%, 46%); color:black; text-align:center; border-radius:4px;">Accent</span> <span style="display:inline-block; width:100px;  background-color:hsl(0, 0%, 93.8%); color:black; text-align:center; border-radius:4px;">Default</span><span style="display:inline-block; width:100px;  background-color:#FFFFFF; color:black; text-align:center; border-radius:4px; border:1px solid #ccc;">None</span> |
+| 3D Marquee Gambar                   | Sekumpulan gambar yang digunakan untuk background                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+
+Berikut adalah contoh tampilan dari komponen ini
+
+![hero](block/preview/hero.png)
+
+## 5. Media
+
+Blok ini berguna untuk menampilkan media berupa gambar/pdf/video youtube. Isian untuk blok ini sebagai berikut
+
+![media](block/isian/media.png)
+
+Berikut penjelasan untuk isian blok ini
+
+| Isi Pertanyaan            | Deskripsi                                                                                                                         |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Tampilkan block           | Apabila dicentang maka komponen ini akan tampil di halaman                                                                        |
+| Apakah link video youtube | Jika dicentang maka diharuskan memilih source video youtube yang akan diembed                                                     |
+| Link video youtube        | Embed link video youtube. Ini bukan hanya link url, silahkan lihat penjelasan di bawah untuk mendapatkan link embed video youtube |
+| Pilih media               | Pilih gambar atau pdf yang ingin ditampilkan                                                                                      |
+| Caption                   | caption dari media                                                                                                                |
+
+Berikut adalah contoh tampilan dari komponen ini
+
+![media](block/preview/media.png)
+
+### Mendapatkan Embed Link Video Youtube
+
+- Klik tombol bagikan
+  ![embedyt](block/other/embed.png)
+- Klik tombol sematkan
+  ![embedyt](block/other/embed-1.png)
+- Salin link yang ada di iframe tersebut
+  ![embedyt](block/other/embed-2.png)
+
+## 6. Photo group
+
+Photo group adalah blok yang dapat menampilkan banyak gambar. Berikut isian dari blok ini
+
+![photogroup](block/isian/photoGroup.png)
+
+Berikut penjelasan isiannya
 
 | Isi Pertanyaan  | Deskripsi                                                  |
 | --------------- | ---------------------------------------------------------- |
 | Tampilkan block | Apabila dicentang maka komponen ini akan tampil di halaman |
-| Judul           | Teks besar yang ada di slide hero                          |
-| Deskripsi       | Teks kecil penjelasan lebih detail                         |
-|                 |                                                            |
+| Pilih media     | Pilih gambar untuk ditampilkan                             |
+| Caption         | Caption untuk media                                        |
 
-## 5. Media
+Berikut adalah tampilan dari komponen ini
 
-## 6. Photo group
+![photoGroup](block/preview/photoGroup.png)
 
 ## 7. Slider Image
 
