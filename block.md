@@ -650,10 +650,54 @@ berikut tampilan untuk komponen ini
 
 Komponen ini merupakan template untuk halaman prodi. Berikut isian dari komponen ini
 
+**Tab Visi Misi**
+
 | Isian pertanyaan | Deskripsi |
 | ---------------- | --------- |
 |                  |           |
 
+**Tab Profil lulusan**
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
+**Tab Akreditasi**
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
+**Tab Capaian Pembelajaran**
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
+**Tab Mata Kuliah**
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
+**Tab Kurikulum**
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
+Berikut adalah tampilan dari komponen ini
+
+![academic](/block/preview/academic.png)
+
 ## 3. Calendar
 
-Komponen ini berfungsi untuk menampilkan event dalam suatu kalender.
+Komponen ini berfungsi untuk menampilkan event dalam suatu kalender. Berikut adalah isian dari komponen ini
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
+Berikut adalah tampilan dari komponen ini
+
+![calendar](/block/preview/calendar.png)
