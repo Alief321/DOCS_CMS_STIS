@@ -35,6 +35,7 @@ Blok adalah komponen-komponen yang digunakan untuk menyusun halaman di konten ha
   - [3. N-Group Card](#3-n-group-card)
   - [4. Six Group Card](#4-six-group-card)
   - [5. Three Group Card](#5-three-group-card)
+  - [6. Base Card](#6-base-card)
 - [Content Layout](#content-layout)
   - [1. Content Layout Two Column](#1-content-layout-two-column)
   - [2. Content Layout Three Column](#2-content-layout-three-column)
@@ -408,10 +409,15 @@ terdapat tiga jenis status pada timeline. Jika sudah selesai bundaran akan bewar
 berikut contoh tiap statusnya
 
 - belum dimulai
+
   ![belum dimulai](block/other/status-not.png)
+
 - sedang berlangsung
+
   ![belum dimulai](block/other/status-now.png)
+
 - sudah selesai
+
   ![belum dimulai](block/other/status-done.png)
 
 ---
@@ -422,13 +428,136 @@ Group card adalah komponen yang digunakan untuk menampilkan kumpulan card/kartu 
 
 ## 1. Bento Group Card
 
+Bento Group Card adalah jenis tampilan di web/aplikasi yang menyusun beberapa kotak informasi (card) dalam bentuk grid atau layout seperti bento box — yaitu rata, rapi, dan sering berbeda ukuran tapi tetap seimbang dan menarik. Berikut adalah isian dari komponen ini
+
+![bento](block/isian/bento.png)
+
+Berikut adalah penjelasan dari isian komponen ini
+
+| Isi Pertanyaan   | Deskripsi                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Tampilkan block  | Apabila dicentang maka komponen ini akan tampil di halaman                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Judul            | Teks yang akan ditampilkan di atas komponen yang berfungsi sebagai judul komponen                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Posisi judul     | Posisi dari judul, apakah di `tengah` `kanan` atau `kiri`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Warna Background | Warna dari latar belakang komponen. Saat ini ada 5 jenis warna yang dapat dipakai, yakni <span style="display:inline-block; width:100px;  background-color:hsl(214, 79%, 30%); color:white; text-align:center; border-radius:4px;">Primary</span> <span style="display:inline-block; width:100px;  background-color:hsl(226, 57%, 21%); color:white; text-align:center; border-radius:4px;">Secondary</span> <span style="display:inline-block; width:100px;  background-color:hsl(45, 80%, 46%); color:black; text-align:center; border-radius:4px;">Accent</span> <span style="display:inline-block; width:100px;  background-color:hsl(0, 0%, 93.8%); color:black; text-align:center; border-radius:4px;">Default</span><span style="display:inline-block; width:100px;  background-color:#FFFFFF; color:black; text-align:center; border-radius:4px; border:1px solid #ccc;">None</span> |
+| Warna Card       | Warna dari kartu (card). Pilihan warnanya sama dengan warna background                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Sumber data card | Sumber data untuk komponen ini apakah dari `collection` seperti artikel, berita , dll atau `custom` yang mana ini membuat card manual                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+
+**Bagian Collection**
+| Isian Pertanyaan | Keterangan |
+|----------|---------------------|
+|Ambil berdasarkan|Mengambil dan menampilkan konten berdasarkan data terbaru atau memilih manual yang ingin ditampilkan atau berdasarkan kategori yang dipilih|
+|Jenis collection| Jenis konten yang ingin diambil misal `artikel` atau `berita`|
+|Pilih `konten` yang ingin ditampilkan| memilih data konten yang ingin ditampilkan secara manual|
+|Pilih kategori |pilih kategori yang ingin ditampilkan|
+|batas jumlah yang diambil| batas data konten yang akan diambil dan ditampilkan|
+
+**Kustomisasi button**
+| Isian Pertanyaan | Keterangan |
+|--|---|
+| Label button | label/tulisan pada tombol |
+|warna button| warna untuk tombol. tipe warnanya sama seperti background|
+|posisi button|jika `mengisi penuh` berarti tombol lebarnya hampir sama dengan card. Jika `kiri` tombol ada di sebelah kiri bawah. Jika `kanan` tombol ada di sebelah kanan bawah. Jika `tengah` tombol ada di tengah |
+
+**Bagian Kustomisasi Card**
+
+| Isian Pertanyaan                    | Keterangan                                                                                                                                                                                                                                                  |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Judul Card                          | Heading pada card                                                                                                                                                                                                                                           |
+| Apakah card memiliki icon           | Jika dicentang maka akan memunculkan opsi memilih icon card                                                                                                                                                                                                 |
+| Apakah card memiliki gambar         | Jika dicentang maka akan memunculkan opsi memilih gambar                                                                                                                                                                                                    |
+| Icon                                | Icon yang ada di tengah card (di bawah judul)                                                                                                                                                                                                               |
+| Gambar                              | Gambar yang ada di tengah card (di bawah judul)                                                                                                                                                                                                             |
+| Teks deskripsi                      | Teks deskripsi singkat dari card                                                                                                                                                                                                                            |
+| Apakah card ini memiliki link       | Jika dicentang maka card akan melink ke tautan lain jika diklik. Akan ada pemilihan jenis tautan                                                                                                                                                            |
+| Tipe Redirect link                  | Jika `internal link` mengarah ke page internal dari website stis. Jika `custom url` mengarah ke url di luar web stis.ac.id misalnyaa ugm.ac.id. jika `Link dari collection page STIS` mengarah ke halaman collection web stis misal "gallery" "berita" dll. |
+| Arahkan ke halaman                  | Memilih arahkan ke halaman mana link ini                                                                                                                                                                                                                    |
+| Url Link                            | Arahkan ke link di luar halaman stis                                                                                                                                                                                                                        |
+| Pilih collection page dari web STIS | Memilih halaman daftar konten Politeknik Statistika STIS                                                                                                                                                                                                    |
+| Tampilkan button cta                | menampilkan tombol di pojok kanan bawah yang dapat mengarah ke tautan tertentu                                                                                                                                                                              |
+
+Berikut contoh tampilan untuk komponen ini
+
+- custom card
+
+  ![bento](/block/preview/bento.png)
+
+- dari collection
+
+![bento](/block/preview/bento-2.png)
+
 ## 2. Four Group Card
+
+Four grup card menampilkan card dengan 4 card.
+
+Isian pada four grup card sama dengan isian bento group card hanya ditambah isian berikut
+
+| Isian Pertanyaan | Keterangan                                                                                                                                          |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| penempatan card  | jika `grid` maka card akan tertata tiap baris ada 2 card jika `flex` 4 card akan tertata dalam satu baris (mode dekstop, untuk mobile menyesuaikan) |
+
+berikut tampilan komponen ini
+
+- flex card
+
+![fourgroup](/block/preview/fourgroup.png)
+
+- grid card
+
+![fourgroup](/block/preview/fourgroup2.png)
 
 ## 3. N-Group Card
 
+N-Group card berfungsi untuk mengakomodir group card dengan jumlah bebas
+
+isian pada N-Group card sama dengan Bento group card hannya saja ada tambahan isian berikut
+
+| Isian Pertanyaan | Keterangan                                                                                                           |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Tipe bentuk card | bentuk dari card apakah jenis `card 1` yang mana card ini dimensinya potrait atau `card 2` yang berdimensi landscape |
+
+berikut contoh tampilan komponen ini
+
+- jenis card 1
+
+![card1](/block/preview/n-group.png)
+
+- jenis card 2
+
+![card1](/block/preview/n-group2.png)
+
 ## 4. Six Group Card
 
+Six grup card menampilkan card dengan 6 card.
+
+Isian pada six grup card sama dengan isian four group card
+
+berikut contoh komponen dari six group card
+
+![sixgroup](/block/preview/six-group.png)
+
 ## 5. Three Group Card
+
+Three group card menampilkan card dengan 3 card
+
+Isian pada three group card sama dengan isian four group card
+
+![three](/block/preview/threegroup.png)
+
+## 6. Base Card
+
+Base card merupakan card kustom yang dibuat dan mengakomodir heading subheading serta angka (cocok untuk menampilkan statistik singkat)
+
+Isian awal berupa kustomisasi card dan isian seperti tampilkan block, warna background dan judul sama seperti komponen group card lain. Hanya saja pada Cardnya isiannya ada tambahan berupa heading dan sub heading berikut
+
+| isian pertanyaan | Deskripsi                                    |
+| ---------------- | -------------------------------------------- |
+| Tipe heading     | tipe dari heading apakah teks atau angka     |
+| Tipe subheading  | tipe dari sub heading apakah teks atau angka |
+| Judul Card       | Heading dari card                            |
+| Sub judul card   | Sub heading dari card                        |
+
+Berikut adalah contoh tampilan komponennya
 
 ---
 
@@ -436,7 +565,48 @@ Group card adalah komponen yang digunakan untuk menampilkan kumpulan card/kartu 
 
 ## 1. Content Layout Two Column
 
+Komponen ini berfungsi untuk menampilkan gambar dan juga tulisan deskripsi dan dapat juga memuat button call to action yang mengarah ke tautan tertentu. Deskripsi isian awal seperti tampilkan block warna background dll dapat dilihat di penjelasan komponen sebelumnya
+
+berikut adalah isian untuk mengisi kontennya
+
+![c2layout](/block/isian/c2layout.png)
+
+berikut penjelasannya
+|Isi pertanyaan| Deskripsi|
+|---|---|
+|Tipe layout| tipe dari layout apakah gambarnya di kiri atau di kanan|
+|pilih gambar| memilih gambar yang akan ditampilkan (maksimal 2 gambar)|
+|teks deskripsi| deskripsi yang ada di samping gambar|
+|apakah ada button| jika dicentang akan memunculkan button cta|
+
+**Kustomisasi button**
+| Isian Pertanyaan | Keterangan |
+|--|---|
+| Tipe Redirect link | Jika `internal link` mengarah ke page internal dari website stis. Jika `custom url` mengarah ke url di luar web stis.ac.id misalnyaa ugm.ac.id. jika `Link dari collection page STIS` mengarah ke halaman collection web stis misal "gallery" "berita" dll. |
+| Arahkan ke halaman | Memilih arahkan ke halaman mana link ini |
+| Url Link | Arahkan ke link di luar halaman stis |
+| Pilih collection page dari web STIS | Memilih halaman daftar konten Politeknik Statistika STIS
+| Tulisan dalam button | label/tulisan pada tombol |
+| Tipe style button | Tipe tombol dengan penjelasan sebagai berikut. <ul><li> `Solid button` adalah tombol yang warnanya penuh, menutupi seluruh tombol</li> <li>untuk `outline button` warna transparan dan hanya border di sekitarnya yang bewarna </li><li>untuk `error button` adalah button dengan warna merah </li> <li>`link button` warna button transparan hanya ada underline di bawah tulisan bila cursor diarahkan ke area button</li><li> `ghost button` warnanya transparan</li></ul> |
+|warna button| warna untuk tombol. tipe warnanya sama seperti background|
+
+Berikut adalah contoh tampilan komponennya
+
+![c2layout](/block/preview/c2layout.png)
+
 ## 2. Content Layout Three Column
+
+Komponen ini hampir sama dengan komponen content layout two column. Namun pada komponen ini kolomnya ada 3 yakni, teks deskripsi kiri, gambar, dan teks deskripsi kanan
+
+isiannya kontennya berubah menjadi seperti di bawah ini
+
+![c3layout](/block/isian/c3layout.png)
+
+Penjelasan deskripsi isianya sama dengan content layout two column
+
+berikut contoh tampilan komponennya
+
+![c3layout](/block/preview/c3layout.png)
 
 ---
 
@@ -444,7 +614,25 @@ Group card adalah komponen yang digunakan untuk menampilkan kumpulan card/kartu 
 
 ## 1. FAQ
 
+Komponen ini menampilkan list FAQ yang ada di CMS
+
+berikut isian dari blok ini
+
+![faq](/block/isian/faq.png)
+
+deskripsi tipe warna card sama dengan warna card pada komponen sebelumnya.
+
+berikut tampilan komponennya
+
+![faq](/block/preview/faq.png)
+
 ## 2. Public Information
+
+Komponen ini menampilkan list public information yang ada di CMS
+
+berikut contoh tampilan dari komponen ini
+
+![public-information](/block/preview/public-information.png)
 
 ---
 
@@ -452,6 +640,20 @@ Group card adalah komponen yang digunakan untuk menampilkan kumpulan card/kartu 
 
 ## 1. About STIS
 
+Komponen ini menampilkan isian dari konten tentang STIS yang ada di CMS
+
+berikut tampilan untuk komponen ini
+
+![about-stis](/block/preview/about.png)
+
 ## 2. Academic
 
+Komponen ini merupakan template untuk halaman prodi. Berikut isian dari komponen ini
+
+| Isian pertanyaan | Deskripsi |
+| ---------------- | --------- |
+|                  |           |
+
 ## 3. Calendar
+
+Komponen ini berfungsi untuk menampilkan event dalam suatu kalender.
