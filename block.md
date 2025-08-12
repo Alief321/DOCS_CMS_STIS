@@ -652,39 +652,57 @@ Komponen ini merupakan template untuk halaman prodi. Berikut isian dari komponen
 
 **Tab Visi Misi**
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan | Deskripsi          |
+| ---------------- | ------------------ |
+| Program studi    | Nama program studi |
+| Visi             | Visi program studi |
+| Misi             | Misi program studi |
 
 **Tab Profil lulusan**
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan | Deskripsi                                                         |
+| ---------------- | ----------------------------------------------------------------- |
+| Profil lulusan   | Deskripsi Profil lulusan formatnya richtext jadi bisa dikreasikan |
 
 **Tab Akreditasi**
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan                      | Deskripsi                   |
+| ------------------------------------- | --------------------------- |
+| Sertifikat                            | Sertifikat akreditasi prodi |
+| Deskripsi tambahan terkait akreditasi |                             |
 
 **Tab Capaian Pembelajaran**
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan               | Deskripsi                                                           |
+| ------------------------------ | ------------------------------------------------------------------- |
+| Deskripsi Capaian pembelajaran | Deskripsi awal dari capaian pembelajaran                            |
+| Kategori capaian pembelajaran  | Kategori dari capaian pembelajaran misal `sikap` `keterampilan` dll |
+| Deskripsi capaian pembelajaran | Deskripsi dari kategori capaian pembelajaran                        |
 
 **Tab Mata Kuliah**
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan                   | Deskripsi                                                                                                                          |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Deskripsi mata kuliah              | Deskripsi awal dari mata kuliah (teks pembuka)                                                                                     |
+| Kelompok mata kuliah               | penjelasan kelompok mata kuliah bisa dibuat tabel seperti gambar di bawah                                                          |
+| Struktur Mata Kuliah               | Misal isiannya `Semester 1`                                                                                                        |
+| Deskripsi Mata kuliah per semester | Mata kuliah apa saja yang ada di semester tersebut beserta penjelasanya. Contohnya dapat dibuat seperti tabel pada gambar di bawah |
+
+Gambar kelompok matkul
+![kelompok matkul](/block/preview/deskripsimatkul.png)
+
+Gambar deskripsi matkul per semester
+![desk matkul per sem](/block/preview/deskMatkul.png)
 
 **Tab Kurikulum**
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan    | Deskripsi                                                   |
+| ------------------- | ----------------------------------------------------------- |
+| Deskripsi kurikulum | Berisi teks pembuka atau deskripsi dan penjelasan kurikulum |
+| Gambar kurikulum    | Berisi gambar struktur kurikulum                            |
+
+**+**
+tab ini berguna jika ingin menambahkan tab baru di blok akademik.
 
 Berikut adalah tampilan dari komponen ini
 
@@ -692,11 +710,14 @@ Berikut adalah tampilan dari komponen ini
 
 ## 3. Calendar
 
-Komponen ini berfungsi untuk menampilkan event dalam suatu kalender. Berikut adalah isian dari komponen ini
+Komponen ini berfungsi untuk menampilkan event dalam suatu kalender. Berikut adalah isian dari komponen ini. Untuk isian default lainnya sama dengan isian blok di atas (misal judul dll). Selanjutnya untuk isian event list penjelasannya sebagai berikut
 
-| Isian pertanyaan | Deskripsi |
-| ---------------- | --------- |
-|                  |           |
+| Isian pertanyaan | Deskripsi                                                       |
+| ---------------- | --------------------------------------------------------------- |
+| Title            | Nama kegiatan                                                   |
+| Waktu mulai      | waktu mulai kegiatan                                            |
+| Waktu selesai    | Waktu kegiatan selesai (isi jika kegiatannya lebih dari 1 hari) |
+| Description      | deskripsi dari kegiatan                                         |
 
 Berikut adalah tampilan dari komponen ini
 
